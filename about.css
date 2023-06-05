@@ -1,0 +1,58 @@
+/*  ***********  ABOUT  *********** */
+.about {
+    margin-top: 3rem;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about-right {
+    margin: 5rem 0 2.5rem;
+}
+
+/*  ***********  TEAM  *********** */
+.team{
+    background: #222448;
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+}
+
+.team-container{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2rem;
+}
+
+.team__member{
+    background: #272956;
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+    border-radius: 3rem;
+}
+
+.team__member:hover{
+    background: transparent;
+    border-color: rgb(35, 59, 79);
+  
+}
+
+.team__member-image img{
+    filter: saturate(0);
+}
+
+.team__member:hover img{
+    filter: saturate(1);
+}
+
+.team_member-info *{
+/* text-align: center; */
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+.team_member-info p{
+    color:rgba(255,255,255,0.7);
+}

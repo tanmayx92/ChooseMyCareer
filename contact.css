@@ -1,0 +1,80 @@
+section {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact__container {
+    background: #252d4f;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 25rem;
+    margin: 5rem auto;
+    border-radius: 1rem;
+}
+
+/* ********************  Aside  ********************  */
+.contact__aside {
+    background: #212846;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 11rem;
+}
+
+.aside_image {
+    margin-bottom: 2rem;
+}
+
+.contact__aside h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* .contact__aside p{ 
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+} */
+
+.contact_details li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* ********************  FORM  ********************  */
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.form__name {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact__form input[type="text"] {
+width: 50%;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 0.5rem;
+  background:  #2d3861;
+  color: white;
+}
+
+.contact__form .btn {
+    cursor: pointer;
+    margin-top: 0.5rem;
+    width:  max-content;
+}
+
+::placeholder {
+    color: aliceblue;
+}

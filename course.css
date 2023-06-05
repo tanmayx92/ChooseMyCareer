@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color--primary: rgb(148, 37, 208);
+
+    /* xs (for phones - screens less than 768px wide)
+    sm (for tablets - screens equal to or greater than 768px wide)
+    md (for small laptops - screens equal to or greater than 992px wide)
+    lg (for laptops and desktops - screens equal to or greater than 1200px wide)  */
+    --container-width-lg: 76%;
+    --container-width-md: 76%;
+    --container-width-sm: 76%;
+
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+    color: white;
+    background: #1f2641;
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+/* section {
+    padding: 6rem 0;
+   1rem=16pixel 
+} */
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background-color: black;
+    background: rgb(225, 53, 53);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-primary {
+    background: rgb(243, 71, 9);
+    color: white;
+    padding: 0.89rem;
+}
+
+
+/* ******************  NAVBAR  ****************** */
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+/* Changing navbar style on scroll using javascript */
+.window-scroll {
+    background: #242c4c;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    /* x y blur color  */
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a {
+    font-size: 0.9rem;
+    transition: all 400ms ease;
+}
+
+.nav__menu a:hover {
+    color: #424890;
+}
+
+section{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    /* height: 100vh; */
+    margin-bottom: 5rem;
+}
+
+/* ******************  CAREER-GUIDE  ****************** */
+.courses{
+    margin-top: 3rem;
+}
+
+.courses__container{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 2rem;
+}
+
+.course{
+    background: #2e3267;
+    text-align: center;
+    border:1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover{
+background: transparent;
+border-color: #424890;
+}
+.course__info{
+    padding: 2rem;
+}
+
+.course__info p{
+    margin: 1.2rem 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* ******************  FOOTER  ****************** */
+footer{
+    background: #1f2641;
+    padding-top:5rem ; 
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+ }
+ 
+ .footer__container{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr );
+     gap: 5rem;
+ }
+ 
+ .footer__container h4{
+     margin-bottom: 1.2rem;
+ }
+ 
+ .footer_1 p{
+  margin: 0 0 2rem;
+ }
+ 
+ footer ul li{
+     margin-bottom: 0.7rem;
+ }
+ 
+ footer ul li a:hover{
+ text-decoration: underline;
+ }
+
+
